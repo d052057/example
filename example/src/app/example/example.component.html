@@ -1,0 +1,23 @@
+<div class="container">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>title</th>
+        <th>param</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(p of data(); track p.id){
+      <tr>
+        <td class="text-start">{{p.id}}</td>
+        <td class="text-start">{{p.title}}</td>
+        <td class="text-start">{{p.param}}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+  <button (click)="buttonVClick()" class="btn btn-primary">Video</button>
+  <button (click)="buttonMClick()" class="btn btn-info">Movie</button>
+</div>
+

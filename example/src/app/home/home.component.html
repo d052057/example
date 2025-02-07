@@ -1,0 +1,7 @@
+<button class="input-group-prepend" (click)="startRecording()" *ngIf="!isUserSpeaking">
+  <span class="input-group-text">record</span>
+</button>
+<button class="active-mic me-1" (click)="stopRecording()" *ngIf="isUserSpeaking">
+  <span class="input-group-text">stop</span>
+</button>
+<input type="text" class="form-control" [(ngModel)]="searchTerm" name="searchTerm" placeholder="Search...">
